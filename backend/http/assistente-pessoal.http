@@ -1,0 +1,7 @@
+POST https://devhunters.app.n8n.cloud/webhook/assistente-pessoal
+Content-Type: application/json
+
+{
+     "chatId": "323456789",
+     "mensagem": "Qual ou quais tecnologias você recomendaria para um mvp de mobile?"
+}
