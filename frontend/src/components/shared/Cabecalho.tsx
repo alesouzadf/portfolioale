@@ -6,7 +6,7 @@ import Menu from "./Menu"
 export default function Cabecalho() {
 	return (
 		<header className=" w-full flex items-center h-16 bg-black/50">
-			<Conteiner className="flex-1 flex justify-between">
+			<Conteiner className="flex-1 flex justify-center sm:justify-between">
 				<div className="flex items-center gap-10">
 					<Link href="/" className="hidden sm:block">
 						<Image src="./logo.svg" alt="logo" width={80} height={0} />

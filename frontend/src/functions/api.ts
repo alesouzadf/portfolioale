@@ -7,7 +7,10 @@ export async function httpGet(url: string) {
 
 function normalizarUrl(url: string) {
 	const protocolo = url.split("://")[0]
+
+	console.log(protocolo)
 	const restante = url.split("://")[1]
+	console.log(restante)
 
 	return `${protocolo}://${restante.replaceAll(/\/{2,}/g, "/")}`
 }
