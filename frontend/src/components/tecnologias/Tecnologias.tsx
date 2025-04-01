@@ -10,7 +10,7 @@ export default function Tecnologias(props: TecnologiasProps) {
 		<div className="flex justify-center gap-4 flex-wrap w-4/5">
 			{props.lista.map((tecnologia) => {
 				return (
-					<div className="flex flex-col items-center gap-1">
+					<div key={tecnologia.id} className="flex flex-col items-center gap-1">
 						<span className="relative h-11 w-11 sm:h-16 sm:w-16 rounded-xl overflow-hidden">
 							<Image
 								src={tecnologia.imagem}
