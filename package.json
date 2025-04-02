@@ -3,10 +3,17 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-     "dev": "npx concurrently \"cd backend && npm run start:dev\" \"cd frontend && npm run dev\""
+    "dev": "npx concurrently \"cd backend && npm run start:dev\" \"cd frontend && npm run dev\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.487.0",
+    "tailwind-merge": "^3.1.0",
+    "tw-animate-css": "^1.2.5"
+  }
 }
