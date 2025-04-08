@@ -6,7 +6,7 @@ export interface TecnologiasTrabalhadasProps {
 
 export default function TecnologiasTrabalhadas(props: TecnologiasTrabalhadasProps) {
 	return props.lista ? (
-		<div className="flex justify-center items-center p-6 w-full bg-black border border-zinc-800 lg:w-72">
+		<div className="flex justify-center items-center p-6 w-full bg-black border border-zinc-800 rounded-2xl lg:w-72">
 			<div className="flex justify-center gap-x-3 flex-wrap">
 				{props.lista.map((tecnologia) => {
 					return (
