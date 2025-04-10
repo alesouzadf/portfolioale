@@ -1,4 +1,5 @@
 import Cabecalho from "@/components/shared/Cabecalho"
+import CarrosselImagens from "@/components/shared/CarrosselImagens"
 import Conteiner from "@/components/shared/Conteiner"
 import { obterProjeto } from "@/functions/projetos"
 
@@ -11,6 +12,7 @@ export default async function PaginaProjeto(props: { params: Promise<{ id: strin
 			<Cabecalho />
 			<Conteiner className="py-7 flex flex-col gap-10">
 				<h1 className="text-3xl font-bold">{projeto.nome}</h1>
+				<CarrosselImagens imagens={projeto.imagens} />
 			</Conteiner>
 		</div>
 	) : null
