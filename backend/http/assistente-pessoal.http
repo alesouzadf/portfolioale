@@ -1,4 +1,4 @@
-POST https://devhunters.app.n8n.cloud/webhook/assistente-pessoal
+POST https://alesouzadf.app.n8n.cloud/webhook-test/assistente-pessoal
 Content-Type: application/json
 
 {
