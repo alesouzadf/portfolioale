@@ -5,13 +5,14 @@ import { useState } from "react"
 
 export default function chat() {
 	// eslint-disable-next-line react-hooks/rules-of-hooks
-	const { chatId, mensagens, adicionarMensagem } = useChat()
+	const { chatId, mensagens, adicionarMensagem, limparMensagens } = useChat()
 	// eslint-disable-next-line react-hooks/rules-of-hooks
 	const [texto, setTexto] = useState("")
 	return (
 		<div>
 			<h1>Chat</h1>
 			<h2>Chat ID: {chatId}</h2>
+			<button onClick={limparMensagens}>Limpar</button>
 
 			<ul>
 				{mensagens.map((mensagem: Mensagem) => (
