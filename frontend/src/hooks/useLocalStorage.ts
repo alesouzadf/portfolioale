@@ -1,5 +1,4 @@
 "use client"
-
 import { useEffect, useState } from "react"
 
 export default function useLocalStorage<T>(chave: string, valorInicial: T) {
@@ -13,9 +12,7 @@ export default function useLocalStorage<T>(chave: string, valorInicial: T) {
 	})
 
 	useEffect(() => {
-		if (typeof window !== "undefined") {
-			localStorage.setItem(chave, JSON.stringify(valor))
-		}
+		localStorage.setItem(chave, JSON.stringify(valor))
 	}, [chave, valor])
 
 	return [valor, setValor] as const
